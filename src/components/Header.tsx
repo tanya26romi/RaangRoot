@@ -1,4 +1,3 @@
-import React from "react";
 
 // Reference: https://tailwindui.com/components/application-ui/navigation/navbars
 

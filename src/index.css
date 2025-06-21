@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+RUSTIC ELEGANCE THEME
+- Main background: from-stone-100 via-gray-100 to-amber-50
+- Header: bg-stone-800
+- Text: text-amber-300, text-stone-300, text-stone-700, text-green-800, text-red-800, text-blue-600
+- Buttons: bg-stone-700, text-amber-50
+- Fonts: h1, h2, h3 use 'Merriweather', serif (font-serif-display); body, nav, button use 'Lato', sans-serif (font-sans-body)
+*/
+
+ *, *::before, *::after {
+        box-sizing: border-box;
+      }
+
+      /* Remove default margin and padding from html and body */
+      html, body, #root {
+        margin: 0;
+        padding: 0;
+        height: 100%; /* Ensure html, body, and root take full viewport height */
+        width: 100%; /* Ensure html, body, and root take full viewport width */
+        overflow-x: hidden; /* Prevent horizontal scrolling if any element overflows */
+        background: linear-gradient(to bottom right, #f5f5f4, #f3f4f6, #fef3c7); /* Match from-stone-100 via-gray-100 to-amber-50 */
+      }
+
+      body {
+        font-family: 'Lato', sans-serif; /* Apply Lato as the default body font */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      h1, h2, h3 {
+        font-family: 'Merriweather', serif; /* Apply Merriweather to headings */
+      }
